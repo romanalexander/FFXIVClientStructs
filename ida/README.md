@@ -17,11 +17,14 @@ This is slightly more complicated as Ghidra uses an embedded version of Jython.
 
 ## ffxiv_sigmaker.py
 > [!WARNING]
-> Script file is no longer maintained by anyone. Most people use most people use this [sigmaker](https://github.com/caraxi/sigmaker-x64) instead
+> This script file is no longer maintained by anyone. Most people use [sigmaker-x64](https://github.com/caraxi/sigmaker-x64) instead.
+>
+> **Important:** The sigmaker-x64 plugin only works with **IDA 7 through 8.4** and does not work with IDA 9+.
+> You can download the latest free version of IDA 8 here: [idafree84_windows.exe](https://out7.hex-rays.com/files/idafree84_windows.exe).
 
-This script ingests the data.yml file in the same directory, and generates automatic signatures for consumption by the source-gen modules.
+This script ingests the `data.yml` file in the same directory, and generates automatic signatures for consumption by the source-gen modules.
 
-This support **Python3** and **IDA** only.
+This supports **Python3** and **IDA** only.
 
 #### Dependency installation:
 `pip install dacite pyyaml ruamel-yaml` or `python -m pip install dacite pyyaml ruamel-yaml` in whichever version of python you are currently using with IDA Pro.
